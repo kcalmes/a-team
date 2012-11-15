@@ -1,0 +1,25 @@
+#header{
+  padding-top: 25px;
+  text-align: center;  
+}
+#header img{
+   text-align: center;
+}
+
+#login{
+  text-align: center;
+}
+#subnav{
+  
+}
+#subnav .dropdown{
+
+}
+.form-search{
+  margin-top: 50px;
+  text-align: center;
+}
+footer{
+  padding: 70px 0;
+  /*border-top: 1px solid #E5E5E5;*/
+}
