@@ -24,6 +24,23 @@
         */
       }
     </style>
+    <script>
+    $(function(){
+      
+      $('#login_button').click(function(){
+        netId = $('#net_id').val();
+        if(netId == "student"){
+          window.location = "./pages.html#students/session_history"
+        } else if(netId == "advisor"){
+          window.location = "./pages.html#advisors/resources"
+        } else {
+          
+        }
+        
+      });
+    });
+      
+    </script>
     <link href="./css/bootstrap-responsive.css" rel="stylesheet">
     <link href="./css/theme.css" rel="stylesheet">
     <link href="./css/custom.css" rel="stylesheet">
@@ -46,52 +63,16 @@
   <div id="header" class="container header-texture">
     <div class="row">
       <div class="span3">
-        <a href="#home"><img src="./img/logo.png" /></a>
-      </div>
-      <div id="login" class="span3 offset6">
-        <form>
-          <fieldset>
-            <input type="text" placeholder="Net Id"><br />
-            <input type="text" placeholder="Password"><br />
-            <button type="submit" class="btn">Login</button>
-          </fieldset>
-        </form>
-      </div>
-    </div>
-  </div>
-
-  <div id="subnav" class="container">
-    <div class="row">
-      <div class="span4 menu left">
-        <ul>
-          <li>This is it</li>
-          <li>This is it</li>
-          <li>This is it</li>
-        </ul>
-        <h5>Departments</h5>
-      </div>
-      <div class="offset4 span4 menu middle">
-        <ul>
-          <li>This is it</li>
-          <li>This is it</li>
-          <li>This is it</li>
-        </ul>
-        <h5>Departments</h5>
-      </div>
-      <div class="offset8 span4 menu right">
-        <ul>
-          <li>This is it</li>
-          <li>This is it</li>
-          <li>This is it</li>
-        </ul>
-        <h5>Departments</h5>
+        
       </div>
     </div>
   </div>
   <div id="main-content" class="body-texture">
-    
+    <img src="./img/logo.png" /><br />
+    <input id="net_id" type="text" placeholder="NetID"><br />
+    <input type="password" placeholder="Password"><br />
+    <button id="login_button" class="btn btn-large"><span class="">Login</span></button>
   </div>
-  
   <footer class="footer-texture">
     
   </footer>
