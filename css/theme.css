@@ -1,37 +1,106 @@
-.header-texture {
-position: relative;
-color: white;
-text-align: center;
-background-image: url(../img/blue_texture.png);
-}
-.body-texture {
-  position: relative;
-  color: white;
+#header{
+    position: relative;
+    z-index: 15;
+  }
+#header{
+  padding-top: 10px;
   text-align: center;
-  background-image: url(../img/light_tan_texture.png);
+  /*height: 300px;  */
 }
-.footer-texture {
-  position: relative;
-  color: white;
-  text-align: center;
-  background-image: url(../img/light_blue_texture.png);  
+#header img{
+   text-align: center;
 }
 
-.jumbotran {
-position: relative;
-padding: 40px 0;
-color: white;
-text-align: center;
-text-shadow: 0 1px 3px rgba(0, 0, 0, .4), 0 0 30px rgba(0, 0, 0, .075);
-background: #020031;
-background: -moz-linear-gradient(45deg, #020031 0%, #6D3353 100%);
-background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#020031), color-stop(100%,#6D3353));
-background: -webkit-linear-gradient(45deg, #020031 0%,#6D3353 100%);
-background: -o-linear-gradient(45deg, #020031 0%,#6D3353 100%);
-background: -ms-linear-gradient(45deg, #020031 0%,#6D3353 100%);
-background: linear-gradient(45deg, #020031 0%,#6D3353 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#020031', endColorstr='#6d3353',GradientType=1 );
--webkit-box-shadow: inset 0 3px 7px rgba(0, 0, 0, .2), inset 0 -3px 7px rgba(0, 0, 0, .2);
--moz-box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);
-box-shadow: inset 0 3px 7px rgba(0, 0, 0, .2), inset 0 -3px 7px rgba(0, 0, 0, .2);
+#login{
+  text-align: center;
+}
+#subnav{
+  position: relative;
+  z-index: 5;
+}
+#subnav .menu ul{
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  background-color: #ede4d8;
+  width: 100%;
+  -moz-border-radius: 0px 0px 15px 15px;
+  -webkit-border-radius: 0px 0px 15px 15px;
+  border-radius: 0px 0px 15px 15px; 
+}
+#subnav{
+  height: 50px;
+  position: relative;
+  z-index: 5;
+}
+.menu{
+  display: block;
+  margin-top: 0px;
+  position: absolute;
+}
+#subnav .menu ul{
+  padding: 25px 25px;
+}
+#subnav .menu ul li{
+  text-align: left;
+  border-bottom: 1px solid black;
+  margin: 0px 25px;
+  padding: 7px 0px;
+}
+
+#subnav h5{
+  margin: 0px 0px 0px 50px;
+  padding: 10px 0px;
+  background-color: #ede4d8;
+  text-align: center;
+  cursor: pointer;
+  -moz-border-radius: 0px 0px 15px 15px;
+  -webkit-border-radius: 0px 0px 15px 15px;
+  border-radius: 0px 0px 15px 15px;
+  /*IE 7 AND 8 DO NOT SUPPORT BORDER RADIUS*/
+  
+}
+  
+/* menu modifications*/
+#subnav .menu.left ul{
+  -moz-border-bottom-left-radius: 0px;
+  -webkit-border-bottom-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+#subnav .menu.left h5{
+  margin-left: 0px;
+  /*margin-right: 160px;*/
+}
+#subnav .menu.right ul{
+  -moz-border-bottom-right-radius: 0px;
+  -webkit-border-bottom-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  margin-left: -25px;
+  padding-right: 0px;
+}
+#subnav .menu.right h5{
+  margin-right: 0px;
+  /*margin-right: 160px;*/
+}
+
+
+
+#main-content{
+  height: 200px;
+  /*background-color: black;*/
+  width: 100%;
+  height: 200px;
+  position: relative;
+  z-index: 5;
+}
+
+.form-search{
+  margin-top: 50px;
+  text-align: center;
+}
+footer{
+  padding: 40px 0;
+  position: relative;
+  z-index: 5;
+  /*border-top: 1px solid #E5E5E5;*/
 }
