@@ -3,7 +3,7 @@
     z-index: 15;
   }
 #header{
-  padding-top: 25px;
+  padding-top: 10px;
   text-align: center;
   /*height: 300px;  */
 }
@@ -86,9 +86,10 @@
 
 
 #main-content{
-  background-color: black;
+  height: 200px;
+  /*background-color: black;*/
   width: 100%;
-  min-height: 500px;
+  height: 200px;
   position: relative;
   z-index: 5;
 }
@@ -98,7 +99,7 @@
   text-align: center;
 }
 footer{
-  padding: 70px 0;
+  padding: 40px 0;
   position: relative;
   z-index: 5;
   /*border-top: 1px solid #E5E5E5;*/
