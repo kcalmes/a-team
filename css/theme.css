@@ -24,22 +24,7 @@ background-size: 100% 100%;
   background-image: url(../img/top_grad.png);  
   background-size: 100% 100%;
 }
- 
-.jumbotran {
-position: relative;
-padding: 40px 0;
-color: white;
-text-align: center;
-text-shadow: 0 1px 3px rgba(0, 0, 0, .4), 0 0 30px rgba(0, 0, 0, .075);
-background: #020031;
-background: -moz-linear-gradient(45deg, #020031 0%, #6D3353 100%);
-background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#020031), color-stop(100%,#6D3353));
-background: -webkit-linear-gradient(45deg, #020031 0%,#6D3353 100%);
-background: -o-linear-gradient(45deg, #020031 0%,#6D3353 100%);
-background: -ms-linear-gradient(45deg, #020031 0%,#6D3353 100%);
-background: linear-gradient(45deg, #020031 0%,#6D3353 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#020031', endColorstr='#6d3353',GradientType=1 );
--webkit-box-shadow: inset 0 3px 7px rgba(0, 0, 0, .2), inset 0 -3px 7px rgba(0, 0, 0, .2);
--moz-box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);
-box-shadow: inset 0 3px 7px rgba(0, 0, 0, .2), inset 0 -3px 7px rgba(0, 0, 0, .2);
+#header .btn{
+  padding: 33px 12px;
+  width: 228px;
 }
