@@ -3,7 +3,7 @@
     z-index: 15;
   }
 #header{
-  padding-top: 25px;
+  padding-top: 10px;
   text-align: center;
   /*height: 300px;  */
 }
@@ -86,11 +86,11 @@
 
 
 #main-content{
-  background-color: black;
+  /*background-color: black;*/
   width: 100%;
   min-height: 500px;
   position: relative;
-  z-index: 5;
+  z-index: 0;
 }
 
 .form-search{
@@ -98,8 +98,11 @@
   text-align: center;
 }
 footer{
-  padding: 70px 0;
+  padding: 40px 0;
   position: relative;
   z-index: 5;
   /*border-top: 1px solid #E5E5E5;*/
+}
+footer .form-search{
+ margin: 0px;
 }
