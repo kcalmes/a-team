@@ -1,0 +1,24 @@
+
+sessions = [
+    {
+        "date"  : "12/05/2012",
+        "time"  : "3:00p",
+        "netid" : "student1",
+        "fname" : "John",
+        "lname" : "Doe"
+    },
+    {
+        "date"  : "12/05/2012",
+        "time"  : "3:30p",
+        "netid" : "student2",
+        "fname" : "James",
+        "lname" : "Jameson"
+    },
+    {
+        "date"  : "12/05/2012",
+        "time"  : "4:00p",
+        "netid" : "student3",
+        "fname" : "Hank",
+        "lname" : "Blank"
+    }
+]

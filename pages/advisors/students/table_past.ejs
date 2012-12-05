@@ -1,0 +1,24 @@
+<div id="tb-accordion" class="table accordion">
+    <div class="dis-table">
+        <div class="table-row">
+            <div>Date - Time</div>
+            <div>Name</div>
+        </div>
+    </div>
+    <div class="accordion-group">
+        <% for (var abb in sessions) {
+            var sesh = sessions[abb] %>
+        <div class="accordion-heading dis-table">
+            <a class="table-row" data-toggle="collapse" data-parent="#tb-accordion" href="#sesh-<%= abb %>">
+                <div><%= sesh.date %> - <%= sesh.time %></div>
+                <div><%= sesh.fname %> <%= sesh.lname %></div>
+            </a>
+        </div>
+        <div>
+            <div id="sesh-<%= abb %>" class="accordion-body collapse">
+                <div class="accordion-inner">Hellowwww!</div>
+            </div>
+        </div>
+        <% } %>
+    </div>
+</div>
