@@ -3,7 +3,7 @@ psessions = [
     {
         "date"  : "12/04/2012",
         "time"  : "3:00p",
-        "netid" : "student1",
+        "netid" : "student4",
         "fname" : "La'Quesha",
         "lname" : "Bonfayfay",
         "email" : "la@hotmail.com"
@@ -11,7 +11,7 @@ psessions = [
     {
         "date"  : "12/04/2012",
         "time"  : "3:30p",
-        "netid" : "student2",
+        "netid" : "student5",
         "fname" : "Luke",
         "lname" : "Skywalker",
         "email" : "VaderNation@hotmail.com"
@@ -19,7 +19,7 @@ psessions = [
     {
         "date"  : "12/04/2012",
         "time"  : "4:00p",
-        "netid" : "student3",
+        "netid" : "student6",
         "fname" : "Sam",
         "lname" : "McGee",
         "email" : "samster@gmail.com"

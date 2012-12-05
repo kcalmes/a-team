@@ -17,6 +17,7 @@
 .acc-row > div,
 .acc-inner-row > div {
     display: inline-block;
+    vertical-align: top;
     width: 49%;
 }
 
@@ -32,4 +33,26 @@
 
 a.acc-row:hover {
     text-decoration: none !important;
+}
+
+#adv-upcoming tbody tr:hover {
+    background-color: #C8E5FF;
+    cursor: pointer;
+}
+
+#adv-upcoming tbody tr:active {
+    background-color: #7CC1FF;
+}
+
+.apt-selected {
+    background-color: #7CC1FF !important;
+}
+
+#form-sesh > * {
+    display: inline-block;
+    vertical-align: top;
+}
+
+#netid {
+    /*width: 50%;*/
 }

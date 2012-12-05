@@ -20,6 +20,21 @@ $(function(){
   $('#subnav h5').each(function(){
     $(this).trigger('click');
   });
+  
+  
+});
+
+$(document).ready(function() {
+  
+  $('#main-content').on('click', '.apt-row', function() {
+      $('.apt-row').removeClass('apt-selected');
+      $(this).addClass('apt-selected');
+      
+      var netid = $(this).attr('id');
+      
+      $('#netid').val(netid);
+  });
+  
 });
 
 //24 - 16 - 11
