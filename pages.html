@@ -99,7 +99,7 @@
       <div class="span3 menu left">
         <h5><a href="#advisors/resources/manage">Manage</a></h5>
       </div>
-      <div class="offset3 span3 menu middle">
+      <div id="menu-depts" class="offset3 span3 menu middle">
         <ul>
           <li onclick="new EJS({url: './pages/advisors/aResource.ejs'}).update('content', './pages/advisors/documents.json'); document.getElementById('departmentsMenuHeader').click();">Business</li>
           <li><a href="#">Continuing Education</a></li>
@@ -118,7 +118,7 @@
         </ul>
         <h5 id="departmentsMenuHeader">Departments</h5>
       </div>
-      <div class="offset6 span3 menu middle">
+      <div id="menu-car" class="offset6 span3 menu middle">
         <ul>
           <li><a href="#">Resumes</a></li>
           <li><a href="#">Networking</a></li>
@@ -129,7 +129,7 @@
         </ul>
         <h5>Career</h5>
       </div>
-      <div class="offset9 span3 menu right">
+      <div id="menu-acad" class="offset9 span3 menu right">
         <ul>
           <li><a href="#">Course Catalog</a></li>
           <li><a href="#">Helpful Course Outlines</a></li>
@@ -162,6 +162,8 @@
             </div>
           </form>
         </div>
+      </div>
+    </div>
   </footer>
   </body>
 </html>

@@ -56,3 +56,15 @@ a.acc-row:hover {
 #netid {
     /*width: 50%;*/
 }
+
+#menu-depts {
+    margin-top: -295px;
+}
+
+#menu-car {
+    margin-top: -260px;
+}
+
+#menu-acad {
+    margin-top: -330px;
+}

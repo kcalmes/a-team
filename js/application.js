@@ -17,9 +17,9 @@ $(function(){
     //$('#subnav ul.menu').slideDown();
     */
   });
-  $('#subnav h5').each(function(){
-    $(this).trigger('click');
-  });
+//  $('#subnav h5').each(function(){
+//    $(this).trigger('click');
+//  });
   
   
 });
