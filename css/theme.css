@@ -11,6 +11,7 @@ color: white;
 text-align: center;
 background-image: url(../img/top_grad.png);
 background-size: 100% 100%;
+	/*box-shadow: 0px 2px 4px #7C7C7C;*/
 }
 .body-texture {
   position: relative;
@@ -23,6 +24,7 @@ background-size: 100% 100%;
   text-align: center;
   background-image: url(../img/top_grad.png);  
   background-size: 100% 100%;
+  	box-shadow: 0px -2px 4px #7C7C7C;
 }
 #header .btn{
 	background:url(../img/top_button.png);
@@ -55,4 +57,8 @@ background-size: 100% 100%;
 #subnav a{
   text-decoration: none;
   color: #000;
+}
+.accordion-heading{
+	background-color: #EDE4D8;
+	box-shadow: 0px 4px 4px #7C7C7C;
 }
