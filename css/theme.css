@@ -19,12 +19,15 @@ background-size: 100% 100%;
   text-align: center;
 }
 .footer-texture {
-  position: relative;
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
   color: white;
   text-align: center;
   background-image: url(../img/top_grad.png);  
   background-size: 100% 100%;
-  	box-shadow: 0px -2px 4px #7C7C7C;
+  box-shadow: 0px -2px 4px #7C7C7C;
 }
 #header .btn{
 	background:url(../img/top_button.png);
