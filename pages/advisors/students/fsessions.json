@@ -3,7 +3,7 @@ fsessions = [
     {
         "date"  : "12/05/2012",
         "time"  : "3:00p",
-        "netid" : "student1",
+        "netid" : "jdoe",
         "fname" : "John",
         "lname" : "Doe",
         "email" : "john@doe.com"
@@ -11,17 +11,17 @@ fsessions = [
     {
         "date"  : "12/05/2012",
         "time"  : "3:30p",
-        "netid" : "student2",
-        "fname" : "James",
-        "lname" : "Jameson",
-        "email" : "jammyjams@yahoo.com"
+        "netid" : "hblank",
+        "fname" : "Hank",
+        "lname" : "Blank",
+        "email" : "lankyhanky@msn.com"
     },
     {
         "date"  : "12/05/2012",
         "time"  : "4:00p",
-        "netid" : "student3",
-        "fname" : "Hank",
-        "lname" : "Blank",
-        "email" : "lankyhanky@msn.com"
+        "netid" : "jjames28",
+        "fname" : "James",
+        "lname" : "Jameson",
+        "email" : "jammyjams@yahoo.com"
     }
 ]

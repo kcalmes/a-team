@@ -26,14 +26,35 @@ $(function(){
 
 $(document).ready(function() {
   
-  $('#main-content').on('click', '.apt-row', function() {
-      $('.apt-row').removeClass('apt-selected');
-      $(this).addClass('apt-selected');
-      
-      var netid = $(this).attr('id');
-      
-      $('#netid').val(netid);
-  });
+  $('#main-content')
+    .on('click', '.apt-row', function() {
+        $('.apt-row').removeClass('apt-selected');
+        $(this).addClass('apt-selected');
+
+        var netid = $(this).attr('id');
+
+        $('#netid').val(netid);
+    })
+    .on('click', '.btn.start-sesh', function() {
+        var netid;
+        
+        if ($(this).hasClass('f-sesh')) {
+            netid = $(this).attr('id');
+        } else {
+            netid = $('#netid').val();
+        }
+        
+        window.location.assign('#advisors/resources');
+        
+        var html = "<div id='end-sesh'>" + "<button class='btn btn-primary'>End Session</button></div>"
+        $('footer .row').append(html);
+    });
+    
+    $('footer').on('click', '#end-sesh', function() {
+        $('#end-sesh').remove();
+        window.location.assign('#advisors');
+    });
+  
   
 });
 
