@@ -51,3 +51,8 @@ background-size: 100% 100%;
 	background:url(../img/login_button_active.png);
 	color:white;
 }
+
+#subnav a{
+  text-decoration: none;
+  color: #000;
+}
