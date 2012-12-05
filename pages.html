@@ -45,9 +45,20 @@
 
   <div id="header" class="header-texture">
     <div class="container">
-      <div class="row">
+      <div id="advisor-buttons" class="row hide">
         <div class="span4">
           <a href="#advisors/students" class="btn">STUDENTS</a>
+        </div>
+        <div class="span4">
+          <a href="./index.html"><img src="./img/logo.png" /></a>
+        </div>
+        <div class="span4">
+          <a href="#advisors/resources" class="btn">RESOURCES</a>
+        </div>
+      </div>
+      <div id="student-buttons" class="row hide">
+        <div class="span4">
+          <a href="#advisors/students" class="btn">ADVISEMENT</a>
         </div>
         <div class="span4">
           <a href="./index.html"><img src="./img/logo.png" /></a>
@@ -60,64 +71,74 @@
   </div>
 
   <div id="subnav" class="container">
-    <div class="row students hide">
+    <div id="students-advisement" class="row hide">
       <div class="span4 menu left">
-        <ul>
-        </ul>
-        <h5>Past Sessions</h5>
+        <h5><a href="#">Past Sessions</a></h5>
       </div>
       <div class="offset4 span4 menu middle">
-        <ul>
-        </ul>
-        <h5>Future Sessions</h5>
+        <h5><a href="#">Future Sessions</a></h5>
       </div>
     </div>
-    <div class="row advisors hide">
+    <div id="students-resources" class="row students hide">
+      <div class="span4 menu left">
+        <h5><a href="#">student resources</a></h5>
+      </div>
+      <div class="offset4 span4 menu middle">
+        <h5><a href="#">student resources</a></h5>
+      </div>
+    </div>
+    <div id="advisors-students" class="row hide">
+      <div class="span4 menu left">
+        <h5><a href="#advisors/students/past">Past Sessions</a></h5>
+      </div>
+      <div class="offset4 span4 menu middle">
+        <h5><a href="#advisors/students/future">Future Sessions</a></h5>
+      </div>
+    </div>
+    <div id="advisors-resources" class="row advisors hide">
       <div class="span3 menu left">
-        <ul>
-        </ul>
-        <h5>Manage</h5>
+        <h5><a href="#advisors/resources/manage">Manage</a></h5>
       </div>
       <div class="offset3 span3 menu middle">
         <ul>
-          <li>Business</li>
-          <li>Continuing Education</li>
-          <li>Education</li>
-          <li>Engineering and Tech</li>
-          <li>Family, Home, and Social</li>
-          <li>Fine Arts and Comm</li>
-          <li>Graduate Studies</li>
-          <li>Humanities</li>
-          <li>International Studies</li>
-          <li>Law School</li>
-          <li>Life Sciences</li>
-          <li>Nursing</li>
-          <li>Phys and Math Sciences</li>
-          <li>Religious Education</li>
+          <li><a href="#">Business</a></li>
+          <li><a href="#">Continuing Education</a></li>
+          <li><a href="#">Education</a></li>
+          <li><a href="#">Engineering and Tech</a></li>
+          <li><a href="#">Family, Home, and Social</a></li>
+          <li><a href="#">Fine Arts and Comm</a></li>
+          <li><a href="#">Graduate Studies</a></li>
+          <li><a href="#">Humanities</a></li>
+          <li><a href="#">International Studies</a></li>
+          <li><a href="#">Law School</a></li>
+          <li><a href="#">Life Sciences</a></li>
+          <li><a href="#">Nursing</a></li>
+          <li><a href="#">Phys and Math Sciences</a></li>
+          <li><a href="#">Religious Education</a></li>
         </ul>
         <h5>Departments</h5>
       </div>
       <div class="offset6 span3 menu middle">
         <ul>
-          <li>Resumes</li>
-          <li>Networking</li>
-          <li>Interviewing</li>
-          <li>Career Development</li>
-          <li>Internships</li>
-          <li>Employers</li>
+          <li><a href="#">Resumes</a></li>
+          <li><a href="#">Networking</a></li>
+          <li><a href="#">Interviewing</a></li>
+          <li><a href="#">Career Development</a></li>
+          <li><a href="#">Internships</a></li>
+          <li><a href="#">Employers</a></li>
         </ul>
         <h5>Career</h5>
       </div>
       <div class="offset9 span3 menu right">
         <ul>
-          <li>Course Catalog</li>
-          <li>Helpful Course Outlines</li>
-          <li>MAPs</li>
-          <li>Choosing a Major</li>
-          <li>Choosing a Career</li>
-          <li>Graduate School</li>
-          <li>Advisement Services</li>
-          <li>Staff</li>
+          <li><a href="#">Course Catalog</a></li>
+          <li><a href="#">Helpful Course Outlines</a></li>
+          <li><a href="#">MAPs</a></li>
+          <li><a href="#">Choosing a Major</a></li>
+          <li><a href="#">Choosing a Career</a></li>
+          <li><a href="#">Graduate School</a></li>
+          <li><a href="#">Advisement Services</a></li>
+          <li><a href="#">Staff</a></li>
         </ul>
         <h5>Academic</h5>
       </div>
