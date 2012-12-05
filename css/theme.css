@@ -25,10 +25,29 @@ background-size: 100% 100%;
   background-size: 100% 100%;
 }
 #header .btn{
-  padding: 33px 12px;
-  width: 228px;
+	background:url(../img/top_button.png);
+	font-family:Lucida Sans Unicode;
+	font-size:250%;
+	color: white;
+  padding: 33px 0px;
+  width: 225px;
 }
-#subnav a{
-  text-decoration: none;
-  color: #000;
+#header .btn:active{
+	background:url(../img/top_button_active.png);
+}
+.login-style{
+	background:url(../img/login_button.png);
+	font-size:larger;
+	margin:20px;
+	color:white;
+	width:181px;
+	height:46px;
+}
+.login-style:hover{
+	background:url(../img/login_button.png);
+	color:white;
+}
+.login-style:active{
+	background:url(../img/login_button_active.png);
+	color:white;
 }
