@@ -1,36 +1,14 @@
-<div class="container">
-  <div class="row">
-    <div class="span12">
-      <h1>Future Sessions</h1>
-	  
-	  <div class="accordion" id="accordion2">
-  <div class="accordion-group">
-    <div class="accordion-heading">
-      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
-        Doe, John
-      </a>
+<div id="future-sessions" class="container">
+    <div class="row">
+        <div class="span8 offset2">
+            <h1>Future Sessions</h1>
+            <div id="acc-content">
+                
+            </div>
+        </div>
     </div>
-	
-    <div id="collapseOne" class="accordion-body collapse">
-      <div class="accordion-inner">
-        <table class="table">
-              <thead>
-                <tr>
-                  <th>Email: </th>
-                  <th> </th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>JohnDoe@gmail.com</td>
-                  <td> -button here to start session? -</td>
-                </tr>
-              </tbody>
-            </table>
-      </div>
-    </div>
-  </div>
-	  
-    </div>
-  </div>
 </div>
+
+<script>
+    new EJS({url: './pages/advisors/students/table_future.ejs'}).update('acc-content', './pages/advisors/students/sessions.json');
+</script>

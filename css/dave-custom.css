@@ -7,3 +7,22 @@
 #main-content {
     color: black;
 }
+
+.table-row {
+    display: table-row;
+    width: 100%;
+}
+
+.table-row > div {
+    display: table-cell;
+}
+
+.dis-table {
+    display: table;
+    padding: 8px 15px;
+    width: 100%;
+}
+
+a.table-row:hover {
+    text-decoration: none !important;
+}
