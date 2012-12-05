@@ -1,0 +1,21 @@
+
+    apts = [
+        {
+            "time"  : "3:00p",
+            "netid" : "student1",
+            "fname" : "John",
+            "lname" : "Doe"
+        },
+        {
+            "time"  : "3:30p",
+            "netid" : "student2",
+            "fname" : "Hank",
+            "lname" : "Blank"
+        },
+        {
+            "time"  : "4:00p",
+            "netid" : "student3",
+            "fname" : "James",
+            "lname" : "Jameson"
+        }
+    ]

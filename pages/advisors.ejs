@@ -1,17 +1,9 @@
-<div class="container">
-    <div class="row">
-        <div class="span12">
-            <a style="text-align: center;" href="#advisors/students">Students</a> | <a href="#advisors/resources">Resources</a>
-        </div>
-    </div>
-  <div class="row-fluid">
-      <div class="span4 offset4">
-      <form>
-          <fieldset>
-            <input type="text" placeholder="Student NetID"><br />
-            <button type="submit" class="btn-large"><span class="">Start Session</span></button>
-          </fieldset>
-      </form>
-    </div>
-  </div>
+<div id="content" class="container">
+
 </div>
+<script>
+
+    new EJS({url: './pages/advisors/default.ejs'}).update('content', './pages/advisors/apts.json');
+    
+//    $('#content').html(html);
+</script>
