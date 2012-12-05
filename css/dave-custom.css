@@ -9,12 +9,19 @@
 }
 
 .table-row {
-    display: table-row;
+    /*display: table-row;*/
+    padding: 0;
     width: 100%;
 }
 
-.table-row > div {
-    display: table-cell;
+.acc-row > div,
+.acc-inner-row > div {
+    display: inline-block;
+    width: 49%;
+}
+
+.acc-inner-row > div {
+    padding: 8px 0;
 }
 
 .dis-table {
@@ -23,6 +30,6 @@
     width: 100%;
 }
 
-a.table-row:hover {
+a.acc-row:hover {
     text-decoration: none !important;
 }

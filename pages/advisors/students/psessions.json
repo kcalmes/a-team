@@ -1,24 +1,27 @@
 
-sessions = [
+psessions = [
     {
-        "date"  : "12/05/2012",
+        "date"  : "12/04/2012",
         "time"  : "3:00p",
         "netid" : "student1",
-        "fname" : "John",
-        "lname" : "Doe"
+        "fname" : "La'Quesha",
+        "lname" : "Bonfayfay",
+        "email" : "la@hotmail.com"
     },
     {
-        "date"  : "12/05/2012",
+        "date"  : "12/04/2012",
         "time"  : "3:30p",
         "netid" : "student2",
-        "fname" : "James",
-        "lname" : "Jameson"
+        "fname" : "Luke",
+        "lname" : "Skywalker",
+        "email" : "VaderNation@hotmail.com"
     },
     {
-        "date"  : "12/05/2012",
+        "date"  : "12/04/2012",
         "time"  : "4:00p",
         "netid" : "student3",
-        "fname" : "Hank",
-        "lname" : "Blank"
+        "fname" : "Sam",
+        "lname" : "McGee",
+        "email" : "samster@gmail.com"
     }
 ]
