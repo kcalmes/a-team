@@ -33,7 +33,7 @@ background-size: 100% 100%;
 	background:url(../img/top_button.png);
 	font-family:Lucida Sans Unicode;
 	font-size:250%;
-	color: white;
+	color: #eee;
   padding: 33px 0px;
   width: 225px;
 }
@@ -64,4 +64,7 @@ background-size: 100% 100%;
 .accordion-heading{
 	background-color: #EDE4D8;
 	box-shadow: 0px 4px 4px #7C7C7C;
+}
+#header .header.btn.active{
+  background:url(../img/top_button_active.png);
 }

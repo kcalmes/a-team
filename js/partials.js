@@ -1,6 +1,10 @@
 $(function(){  
   navigate();
   window.onhashchange = navigate;
+  $('.header.btn').click(function(){
+    $('.header.btn').each(function(){$(this).removeClass('active');}); 
+    $(this).addClass('active');
+  });
 });
 
 function navigate(){
