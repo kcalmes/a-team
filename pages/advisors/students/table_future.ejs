@@ -6,25 +6,25 @@
         </div>
     </div>
     
-        <% for (var abb in fsessions) {
-            var sesh = fsessions[abb] %>
+	
+        <% for (var abb in fsessions) { %>
+           <% var sesh = fsessions[abb] %>
     <div class="accordion-group">
-        <div class="accordion-heading dis-table">
-            <a class="acc-row" data-toggle="collapse" data-parent="#tb-accordion" href="#sesh-<%= abb %>">
+        <div class="accordion-heading">
+            <a class="accordion-toggle acc-row" data-toggle="collapse" data-parent="#tb-accordion" href="#sesh-<%= abb %>">
                 <div><%= sesh.date %> - <%= sesh.time %></div>
                 <div><%= sesh.fname %> <%= sesh.lname %></div>
             </a>
         </div>
-        <div>
-            <div id="sesh-<%= abb %>" class="accordion-body collapse">
-                <div class="accordion-inner acc-inner-row">
-                    <div><strong>Email:</strong> <%= sesh.email %></div>
-					<div><strong>NetID:</strong> <%= sesh.netid %></div>
-                    <div><button id="<%= sesh.netid %>" class="btn btn-primary start-sesh f-sesh">Start Session</button></div>
-                </div>
-            </div>
-        </div>
+		<div id="sesh-<%= abb %>" class="accordion-body collapse">
+			<div class="accordion-inner acc-inner-row">
+				<div><strong>Email:</strong> <%= sesh.email %></div>
+				<div><strong>NetID:</strong> <%= sesh.netid %></div>
+				<div><button id="<%= sesh.netid %>" class="btn btn-primary start-sesh f-sesh">Start Session</button></div>
+			</div>
+		</div>
     </div>
         <% } %>
+		
     
 </div>
