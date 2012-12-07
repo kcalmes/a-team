@@ -78,6 +78,16 @@ function clickOnResource(urlToGoTo) {
   }
 }
 
+function loadDocSearch(searchQuery) {
+  new EJS({url: './pages/advisors/aResource.ejs'})
+    .update('content', '../searchService.php?query=' + searchQuery);
+}
+
+function loadDocCategory(searchQuery, headerToClose) {
+  loadDocSearch(searchQuery);
+  document.getElementById(headerToClose).click();
+}
+
 //24 - 16 - 11
 
 //1250 + 1000
