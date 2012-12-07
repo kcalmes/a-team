@@ -1,24 +1,24 @@
 <div class="row">
   <div class="span6 offset3">
-            <h4>Documents:</h4>
-            <div id="resourceList">
-              <table class="table table-bordered">
-                <thead>
-                  <tr>
-                    <th>Title</th>
-                    <th>isDoc</th>
-                  </tr>
-                 <tbody>
-		   <% for (var index in results) {
-                      var result = results[index] %>
-                        <tr class="apt-row">
-                          <td><%= result.title %></td>
-                          <td><%= result.isDoc %></td>
-                        </tr>
-                      <% } %>
-                    </tbody>
-                  </thead>
-                </table>
-             </div>
-        </div>
+    <h4>Documents:</h4>
+    <div id="resourceList">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th> </th>
+          </tr>
+        </thead>
+        <tbody>
+          <% for (var index in results) {
+            var result = results[index] %>
+            <tr class="apt-row" <%= "onclick='clickOnResource(\"" %><%= result.url%><%= "\");'" %> >
+              <td><%= result.title %></td>
+              <td><%= (result.isDoc == '1')? "<i class='icon-file'>" : "<i class='icon-globe'>" %></td>
+            </tr>
+          <% } %>
+        </tbody>
+      </table>
     </div>
+  </div>
+</div>

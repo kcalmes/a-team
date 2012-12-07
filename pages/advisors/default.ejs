@@ -1,31 +1,47 @@
-
+<div id="the-sessions" class="container">
     <div class="row">
-        <div class="span6 offset3">
-            <h4>Upcoming appointments:</h4>
-            <table id="adv-upcoming" class="table table-bordered">
-                <thead>
-                    <tr>
-                        <th>Time</th>
-                        <th>Name</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <% for (var abb in apts) {
-                        var apt = apts[abb] %>
-                    <tr id="<%= apt.netid %>" class="apt-row">
-                        <td><%= apt.time %></td>
-                        <td><%= apt.lname %>, <%= apt.fname %></td>
-                    </tr>
-                    <% } %>
-                </tbody>
-            </table>
-        </div>
-    </div>
-    <div class="row-fluid">
-      <div class="span6 offset3">
-        <form id="form-sesh">
-              <input id="netid" type="text" placeholder="Student NetID">
-              <button id="start-sesh" class="btn btn-primary start-sesh">Start Session</button>
-        </form>
-      </div>
-    </div>
+        <div class="span8 offset2">
+            <h3>Future Sessions</h3>
+            <div id="acc-content">
+                <div id="tb-accordion" class="accordion">
+					<div class="dis-table">
+						<div class="acc-row">
+							<div>Date - Time</div>
+							<div>Name</div>
+						</div>
+					</div>
+					<% for (var abb in fsessions) { %>
+					<% var sesh = fsessions[abb] %>
+					<div class="accordion-group">
+						<div class="accordion-heading">
+							<a class="accordion-toggle acc-row" data-toggle="collapse" data-parent="#tb-accordion" href="#sesh-<%= abb %>">
+							<div><%= sesh.date %> - <%= sesh.time %></div>
+							<div><%= sesh.fname %> <%= sesh.lname %></div>
+							</a>
+						</div>
+						<div id="sesh-<%= abb %>" class="accordion-body collapse">
+							<div class="accordion-inner acc-inner-row">
+								<div><strong>Email:</strong> <%= sesh.email %></div>
+								<div><strong>NetID:</strong> <%= sesh.netid %></div>
+								<div><button id="<%= sesh.netid %>" class="btn btn-primary start-sesh f-sesh">Start Session</button></div>
+							</div>
+						</div>
+					</div>
+					<% } %>
+				</div>
+				
+				<div class="row-fluid">
+					<div class="span6 offset3">
+					<form id="form-sesh">
+						<input id="netid" type="text" placeholder="Student NetID">
+						<button id="start-sesh" class="btn btn-primary start-sesh">Start Session</button>
+					</form>
+					</div>
+				</div>
+				
+				
+				
+			</div>
+		</div>
+	</div>
+</div>

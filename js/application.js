@@ -53,6 +53,26 @@ $(function(){
   
 });
 
+function clickOnResource(urlToGoTo) {
+  if(document.getElementById('end-sesh')) {
+    var http = new XMLHttpRequest();
+    var url = "http://www.williamsware.com/cs/urlReturner.php";
+    var params = "url=" + urlToGoTo;
+    http.open("POST", url, true);
+    http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+    http.setRequestHeader("Content-length", params.length);
+    http.setRequestHeader("Connection", "close");
+    http.onreadystatechange = function() {
+      if(http.readyState == 4 && http.status == 200) {
+        window.location = urlToGoTo;
+      }
+    };
+    http.send(params);
+  } else {
+    window.location = urlToGoTo;
+  }
+}
+
 //24 - 16 - 11
 
 //1250 + 1000

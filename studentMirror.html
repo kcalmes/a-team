@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <title>Advisement Center</title>
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js"> </script>
+    <script type="text/javascript">
+      var oldURL = "http://www.byu.edu/";
+
+      function runUpdate() {
+        $.ajax({
+          type: "POST",
+          url: "some.php",
+          data: "name=John&location=Boston",
+          success: function(msg){
+            alert( "Data Saved: " + msg );
+          }
+        });
+      }
+    </script>
+  </head>
+  <body>
+    <div id="mainFrame">
+      <iframe src="http://www.byu.edu/" height="100%" width="100%"></iframe>
+    </div>
+
+    <script type="text/javascript">
+      runUpdate();
+    </script>
+  </body>
+</html>
