@@ -21,11 +21,6 @@ $(function(){
 //    $(this).trigger('click');
 //  });
   
-  
-});
-
-$(document).ready(function() {
-  
   $('#main-content')
     .on('click', '.apt-row', function() {
         $('.apt-row').removeClass('apt-selected');
