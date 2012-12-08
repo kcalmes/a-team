@@ -1,0 +1,59 @@
+<html>
+	<head>
+		<title>Add a new Resource</title>
+		<script type="text/javascript">
+			function sendData() {
+				var url = "addWebsite.php";
+				var urlInput = document.getElementById("url").value;
+				var title = document.getElementById("title").value;
+				var tags = document.getElementById("tags").value;
+				var isDoc = document.getElementById("isDoc").checked;
+				if(isDoc) {
+					isDoc = 1;
+				} else {
+					isDoc = 0;
+				}
+				var params = "url=" + urlInput + "&title=" + title + "&tags=" + tags + "&isDoc=" + isDoc;
+				
+				var http = new XMLHttpRequest();
+				http.open("POST", url, true);
+				http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+				http.setRequestHeader("Content-length", params.length);
+				http.setRequestHeader("Connection", "close");
+				http.onreadystatechange = function() {
+					if(http.readyState == 4 && http.status == 200) {
+						document.getElementById("success").innerHTML = http.responseText;
+						document.getElementById("url").value = "";
+						document.getElementById("title").value = "";
+						document.getElementById("tags").value = "";
+						document.getElementById("isDoc").checked = false;
+						document.getElementById("website").checked = false;
+						
+						setTimeout(function(){
+							document.getElementById("success").innerHTML = "";
+						},3000);
+					}
+				};
+				http.send(params);
+			}
+		</script>
+	</head>
+	<body>
+		<h1>Add a new Resource</h1>
+		<p>URL is the full URL with http:// and everything.</p>
+		<p>Title is whatever title fits best for the Resource.</p>
+		<p>Tags is a comma sepparated list of categories the resource fits in
+		such as "staff,academic,advisement resources".
+		The search works by whatever string is in the query is searched for in the tag fields.</p>
+		<p>Let me know if you have any questions!</p>
+		<form action="" onsubmit="sendData(); return false;">
+			URL: <input type="text" name="url" id="url"><br/>
+			Title: <input type="text" name="title" id="title"><br/>
+			Tags: <input type="text" name="tags" id="tags"><br/>
+			<input type="radio" name="document" id="isDoc"> Document<br/>
+			<input type="radio" name="document" id="website"> or Website<br/>
+			<input type="submit" value="Submit">
+		</form>
+		<h2 id="success"></h2>
+	</body>
+</html>
