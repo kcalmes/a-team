@@ -7,23 +7,28 @@
 
       function runUpdate() {
         $.ajax({
-          type: "POST",
-          url: "some.php",
-          data: "name=John&location=Boston",
+          type: "GET",
+          url: "urlReturner.php",
           success: function(msg){
-            alert( "Data Saved: " + msg );
+            if(oldURL != msg) {
+              $('#mainFrame').html("<iframe src='" + msg +
+                           "' height='100%' width='100%'></iframe>");
+              oldURL = msg;
+            }
           }
         });
+
+        setTimeout(runUpdate, 10000);
       }
+
+      $(document).ready(function(){
+        runUpdate();
+      });
     </script>
   </head>
   <body>
     <div id="mainFrame">
       <iframe src="http://www.byu.edu/" height="100%" width="100%"></iframe>
     </div>
-
-    <script type="text/javascript">
-      runUpdate();
-    </script>
   </body>
 </html>

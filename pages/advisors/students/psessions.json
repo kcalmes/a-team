@@ -23,5 +23,37 @@ psessions = [
         "fname" : "Sam",
         "lname" : "McGee",
         "email" : "samster@gmail.com"
+    },
+    {
+        "date"  : "12/03/2012",
+        "time"  : "3:30p",
+        "netid" : "Billy",
+        "fname" : "Billy",
+        "lname" : "May",
+        "email" : "CallNow@hotmail.com"
+    },
+    {
+        "date"  : "12/03/2012",
+        "time"  : "4:00p",
+        "netid" : "ChuckN",
+        "fname" : "Chuck",
+        "lname" : "Norris",
+        "email" : "samster@gmail.com"
+    },
+    {
+        "date"  : "12/03/2012",
+        "time"  : "4:30pm",
+        "netid" : "fruitPhone4Life",
+        "fname" : "Steve",
+        "lname" : "Jobs",
+        "email" : "SteveJobs@hotmail.com"
+    },
+    {
+        "date"  : "12/02/2012",
+        "time"  : "3:00pm",
+        "netid" : "samTheMan",
+        "fname" : "Sam",
+        "lname" : "Borg",
+        "email" : "samster@gmail.com"
     }
 ]

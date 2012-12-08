@@ -50,13 +50,15 @@ $(function(){
         window.location.assign('#advisors');
     });
   
-  
+    $('.input-append button').click(function() {
+      loadDocSearch($(this).siblings('input').val());
+    });
 });
 
 function clickOnResource(urlToGoTo) {
   if(document.getElementById('end-sesh')) {
     var http = new XMLHttpRequest();
-    var url = "http://www.williamsware.com/cs/urlReturner.php";
+    var url = "urlReturner.php";
     var params = "url=" + urlToGoTo;
     http.open("POST", url, true);
     http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
@@ -71,6 +73,17 @@ function clickOnResource(urlToGoTo) {
   } else {
     window.location = urlToGoTo;
   }
+}
+
+function loadDocSearch(searchQuery) {
+  new EJS({url: './pages/advisors/aResource.ejs'})
+    .update('content', '../searchService.php?query=' + searchQuery);
+}
+
+function loadDocCategory(searchQuery, headerToClose) {
+  loadDocSearch(searchQuery);
+  //document.getElementById(headerToClose).click();
+  $('#' + headerToClose).trigger('click');
 }
 
 //24 - 16 - 11

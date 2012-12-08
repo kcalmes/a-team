@@ -1,0 +1,83 @@
+
+fsessions = [
+    {
+        "date"  : "12/06/2012",
+        "time"  : "10:00am",
+        "netid" : "darkFace",
+        "fname" : "Billy",
+        "lname" : "Jean",
+        "email" : "Billy@hotmail.com"
+    },
+	{
+        "date"  : "12/06/2012",
+        "time"  : "10:30am",
+        "netid" : "sk8ter4life",
+        "fname" : "Sean",
+        "lname" : "Johnson",
+        "email" : "sean@hotmail.com"
+    },
+	{
+        "date"  : "12/06/2012",
+        "time"  : "11:00am",
+        "netid" : "koolkid",
+        "fname" : "Guy",
+        "lname" : "Mollison",
+        "email" : "Guy@hotmail.com"
+    },
+	{
+        "date"  : "12/06/2012",
+        "time"  : "11:30am",
+        "netid" : "ag33",
+        "fname" : "Allison",
+        "lname" : "Garnett",
+        "email" : "Allison@hotmail.com"
+    },
+	{
+        "date"  : "12/06/2012",
+        "time"  : "12:00pm",
+        "netid" : "koolAidMan",
+        "fname" : "KoolAid",
+        "lname" : "Man",
+        "email" : "KoolAidKid@hotmail.com"
+    },
+	{
+        "date"  : "12/07/2012",
+        "time"  : "10:00am",
+        "netid" : "killerBunnies",
+        "fname" : "Carl",
+        "lname" : "Brook",
+        "email" : "Karl@hotmail.com"
+    },
+	{
+        "date"  : "12/07/2012",
+        "time"  : "10:30am",
+        "netid" : "shamFam",
+        "fname" : "Gordon",
+        "lname" : "Shamanis",
+        "email" : "Gordon@hotmail.com"
+    },
+	{
+        "date"  : "12/07/2012",
+        "time"  : "11:00am",
+        "netid" : "iAmBatman",
+        "fname" : "Bruce",
+        "lname" : "Wayne",
+        "email" : "Bruce@hotmail.com"
+    },
+	{
+        "date"  : "12/07/2012",
+        "time"  : "11:30am",
+        "netid" : "jokes",
+        "fname" : "The",
+        "lname" : "Joker",
+        "email" : "joker@hotmail.com"
+    },
+	{
+        "date"  : "12/07/2012",
+        "time"  : "12:00pm",
+        "netid" : "user3571",
+        "fname" : "Captian",
+        "lname" : "kirk",
+        "email" : "Kirk@hotmail.com"
+    }
+]

@@ -1,0 +1,27 @@
+
+fsessions = [
+    {
+        "date"  : "12/05/2012",
+        "time"  : "3:00p",
+        "netid" : "jdoe",
+        "fname" : "John",
+        "lname" : "Doe",
+        "email" : "john@doe.com"
+    },
+    {
+        "date"  : "12/05/2012",
+        "time"  : "3:30p",
+        "netid" : "hblank",
+        "fname" : "Hank",
+        "lname" : "Blank",
+        "email" : "lankyhanky@msn.com"
+    },
+    {
+        "date"  : "12/05/2012",
+        "time"  : "4:00p",
+        "netid" : "jjames28",
+        "fname" : "James",
+        "lname" : "Jameson",
+        "email" : "jammyjams@yahoo.com"
+    }
+]
