@@ -114,3 +114,6 @@ footer{
 footer .form-search{
  margin: 0px;
 }
+.menu ul li{
+  cursor: pointer;
+}
