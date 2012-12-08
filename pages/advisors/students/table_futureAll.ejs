@@ -1,4 +1,4 @@
-<div id="tb-accordion" class="accordion">
+<div id="tb-accordionAll" class="accordion">
     <div class="dis-table">
         <div class="acc-row">
             <div>Date - Time</div>
@@ -11,7 +11,7 @@
            <% var sesh = fsessions[abb] %>
     <div class="accordion-group">
         <div class="accordion-heading">
-            <a class="accordion-toggle acc-row" data-toggle="collapse" data-parent="#tb-accordion" href="#seshAll-<%= abb %>">
+            <a class="accordion-toggle acc-row" data-toggle="collapse" data-parent="#tb-accordionAll" href="#seshAll-<%= abb %>">
                 <div><%= sesh.date %> - <%= sesh.time %></div>
                 <div><%= sesh.fname %> <%= sesh.lname %></div>
             </a>
