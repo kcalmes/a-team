@@ -87,6 +87,7 @@
 
 #main-content{
   /*background-color: black;*/
+  margin-bottom: 70px;
   width: 100%;
   /*min-height: 570px;*/
   position: relative;
@@ -113,4 +114,9 @@ footer{
 }
 footer .form-search{
  margin: 0px;
+}
+
+#doc-upload > * {
+    display: inline-block;
+    vertical-align: middle;
 }
