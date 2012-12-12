@@ -1,7 +1,45 @@
-<div class="container">
-  <div class="row">
-    <div class="span12">
-        <h1>Add/Edit Website</h1>
+
+
+<script>
+    var title = { title: "Add Website"};
+    var type = { 
+        upper: "Website",
+        lower: "website"
+    };
+    
+    new EJS({url: './pages/edit/title.ejs'}).update('edit-title', title);
+    
+    new EJS({url: './pages/edit/form.ejs'}).update('edit-form', type);
+    
+</script>
+
+<div class="container" style="text-align: left;">
+<!--    <div class="row">
+        <div class="span12">
+            <h1>Add/Edit Document</h1>
+        </div>
+    </div>-->
+<!--    <div class="row">
+        <div class="span10">
+            <form class="form-horizontal">
+                <div class="control-group">
+                    <label class="control-label" for="doc-name">Name: </label>
+                    <div class="controls">
+                        <input id="doc-name" type="text" maxlength="30" placeholder="Document name">
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label" for="doc-desc">Description: </label>
+                    <div class="controls">
+                        <input id="doc-desc" class="span6" type="text" maxlength="65" placeholder="Short description of document (65 characters)">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>-->
+    <div class="row">
+        <div id="edit-form" class="span10 offset1">
+            
+        </div>
     </div>
-  </div>
 </div>

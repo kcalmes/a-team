@@ -1,3 +1,18 @@
+
+
+<script>
+    var title = { title: "Add Document"};
+    var type = { 
+        upper: "Document",
+        lower: "document"
+    };
+    
+    new EJS({url: './pages/edit/title.ejs'}).update('edit-title', title);
+    
+    new EJS({url: './pages/edit/form.ejs'}).update('edit-form', type);
+    
+</script>
+
 <div class="container" style="text-align: left;">
 <!--    <div class="row">
         <div class="span12">
@@ -23,25 +38,8 @@
         </div>
     </div>-->
     <div class="row">
-        <div class="span10 offset1">
-            <form>
-                <fieldset>
-                    <label>Name:</label>
-                    <input id="doc-name" type="text" maxlength="30" placeholder="Document name">
-                    <label>Description:</label>
-                    <input id="doc-desc" class="span6" type="text" maxlength="65" placeholder="Short description of document (65 characters)">
-                    <div id="doc-upload" class="span5">
-                        <label class="span1">Document:</label>
-                        <button class="btn span2 offset1">Upload new</button>
-                    </div>
-                    <label>Details:</label>
-                    <textarea class="span10" rows="10"></textarea>
-                </fieldset>
-            </form>
-            <div class="span10">
-                <button id="doc-cancel" class="btn span3">Cancel</button>
-                <button id="doc-save" class="btn btn-primary span3 offset3">Save</button>
-            </div>
+        <div id="edit-form" class="span10 offset1">
+            
         </div>
     </div>
 </div>

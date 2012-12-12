@@ -1,8 +1,19 @@
-<div class="container">
+<div id="manage-recs" class="container" style="text-align: left">
   <div class="row">
-    <div class="span12">
-        <h1>Manage Resources</h1>
-        <a href="#advisors/resources/editdoc">Add Document</a> | <a href="#advisors/resources/editweb">Add Website</a> 
+    <div class="span6 offset3">
+        <h3>Manage Resources</h3>
+        <a class="btn" onclick="setTitle('Add Document')" href="edit.html#edit/doc">Add Document</a> <a class="btn" href="edit.html#edit/website">Add Website</a> 
+    </div>
+  </div>
+  <div class="row">
+    <div id="all-recs" class="span12">
+         
     </div>
   </div>
 </div>
+
+<script>
+
+    new EJS({url: './pages/advisors/aResource.ejs'}).update('all-recs', './pages/advisors/resources/resources.json');
+    
+</script>

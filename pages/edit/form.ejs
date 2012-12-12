@@ -1,0 +1,23 @@
+<form>
+    <fieldset>
+        <label>Name:</label>
+        <input id="doc-name" type="text" maxlength="30" placeholder="<%= upper %> name">
+        <label>Description:</label>
+        <input id="doc-desc" class="span6" type="text" maxlength="65" placeholder="Short description of <%= lower %> (65 characters)">
+        <% if (lower == 'document') { %>
+        <div id="doc-upload" class="">
+            <label class="">Document:</label>
+            <button class="btn btn-small">Upload</button>
+        </div>
+        <% }  else { %>
+        <label>Website URL:</label>
+        <input id="doc-desc" class="span6" type="text" placeholder="URL of <%= lower %>">
+        <% } %>
+<!--        <label class="">Details:</label>
+        <textarea class="span10" rows="10"></textarea>-->
+    </fieldset>
+</form>
+<div id="edit-btns" class="">
+    <a id="doc-cancel" class="btn" href="pages.html#advisors/resources/manage">Cancel</a>
+    <a id="doc-save" class="btn btn-primary" href="pages.html#advisors/resources/manage">Save</a>
+</div>
