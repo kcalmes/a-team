@@ -68,14 +68,7 @@ a.acc-row:hover {
 #menu-acad {
     margin-top: -330px;
 }
-#menu-depts {
-    margin-top: -375px;
-}
 
-#menu-car {
-    margin-top: -280px;
-}
-
-#menu-acad {
-    margin-top: -390px;
+#manage-recs .btn {
+    width: 115px;
 }

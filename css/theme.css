@@ -72,12 +72,15 @@ background-size: 100% 100%;
 
 #edit-header {
     background-image: url(../img/top_grad.png);
-    /*background-size: 100% 100%;*/
+    background-size: 100% 100%;
     color: white;
     height: 70px;
+    left: 0;
     padding-top: 10px;
-    position: relative;
+    position: fixed;
+    right: 0;
     text-align: center;
+    top: 0;
 }
 
 #edit-footer {
@@ -91,4 +94,8 @@ background-size: 100% 100%;
     position: fixed;
     right: 0;
     text-align: center;
+}
+
+#main-content.edit-doc {
+    margin-top: 100px;
 }

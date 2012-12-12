@@ -86,6 +86,28 @@ function loadDocCategory(searchQuery, headerToClose) {
   $('#' + headerToClose).trigger('click');
 }
 
+// A second method for retrieving the stuff from Lawrence's webservice, and we can all test it
+// It doesn't quite work the way we would neeed it to because of the format of the webservice response
+function loadDocSearch2(searchQuery) {
+  var url = "http://www.williamsware.com/cs/searchService.php?query=" + searchQuery;
+  
+  var bigUrl = "http://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20html%20where%20url%3D%22" + encodeURIComponent(url) + "%22&format=json&callback=";
+ 
+  $.ajax({
+    url: bigUrl,
+    datatype: 'json',
+    success: function(data) {
+          alert("success?");
+          var string = JSON.stringify(data.query.results.body.p);
+          var sub = string.substr(1,string.length - 2)
+          var sub2 = sub.replace(/\\/g,"");
+//          $('#main-content').text(sub2);
+//          var results = JSON.parse(sub2);
+          new EJS({url: './pages/advisors/aResource.ejs'}).update('content', sub2);
+      }
+  });
+}
+
 //24 - 16 - 11
 
 //1250 + 1000
