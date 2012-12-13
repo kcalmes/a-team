@@ -47,7 +47,7 @@ $(function(){
     
     $('body').on('click', '.input-append button', function() {
         var query = $(this).siblings('input').val()
-        alert(query);
+//        alert(query);
         loadDocSearch(query);
     });
     
