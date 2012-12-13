@@ -64,7 +64,7 @@
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 979px) {
     
     #menu-depts {
         margin-top: -295px;
@@ -79,7 +79,7 @@
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 978px) {
     
     #menu-depts {
         margin-top: -375px;

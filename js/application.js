@@ -45,13 +45,15 @@ $(function(){
         $('footer .row').append(html);
     });
     
+    $('body').on('click', '.input-append button', function() {
+        var query = $(this).siblings('input').val()
+        alert(query);
+        loadDocSearch(query);
+    });
+    
     $('footer').on('click', '#end-sesh', function() {
         $('#end-sesh').remove();
         window.location.assign('#advisors');
-    });
-  
-    $('.input-append button').click(function() {
-      loadDocSearch($(this).siblings('input').val());
     });
 });
 
@@ -75,7 +77,7 @@ function clickOnResource(urlToGoTo) {
   }
 }
 
-function loadDocSearch(searchQuery) {
+function loadDocSearch2(searchQuery) {
   new EJS({url: './pages/advisors/aResource.ejs'})
     .update('content', '../searchService.php?query=' + searchQuery);
 }
@@ -88,26 +90,33 @@ function loadDocCategory(searchQuery, headerToClose) {
 
 // A second method for retrieving the stuff from Lawrence's webservice, and we can all test it
 // It doesn't quite work the way we would neeed it to because of the format of the webservice response
-function loadDocSearch2(searchQuery) {
-  var url = "http://www.williamsware.com/cs/searchService.php?query=" + searchQuery;
+function loadDocSearch(searchQuery) {
   
-  var bigUrl = "http://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20html%20where%20url%3D%22" + encodeURIComponent(url) + "%22&format=json&callback=";
- 
+  // Uses a freaking awesome thing called YQL from Yahoo! Yeah buddy! Cross domain ajax, here we come!!
+  var url = "http://www.williamsware.com/cs/new/searchService2.php?query=" + searchQuery;
+  var yqlUrl = "http://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20json%20where%20url%3D%22" + encodeURIComponent(url) + "%22&format=json&callback=";
+  
   $.ajax({
-    url: bigUrl,
+    url: yqlUrl,
     datatype: 'json',
     success: function(data) {
-          alert("success?");
-          var string = JSON.stringify(data.query.results.body.p);
-          var sub = string.substr(1,string.length - 2)
-          var sub2 = sub.replace(/\\/g,"");
-//          $('#main-content').text(sub2);
-//          var results = JSON.parse(sub2);
-          new EJS({url: './pages/advisors/aResource.ejs'}).update('content', sub2);
+        var query = {query: searchQuery};
+        
+        new EJS({url: './pages/advisors/resources/view.ejs'}).update('main-content', query);
+        
+        if (data.query.results.json == null) {
+            new EJS({url: './pages/advisors/no_results.ejs'}).update('content', query);
+        } else {
+            var length = data.query.results.json.results.length;
+//            alert(length);
+            if (length == 0) {
+                new EJS({url: './pages/advisors/no_results.ejs'}).update('content', query);
+            } else if (length > 0) {
+                new EJS({url: './pages/advisors/aResource.ejs'}).update('content', data.query.results.json);
+            } else {
+                new EJS({url: './pages/advisors/oneResource.ejs'}).update('content', data.query.results.json);
+            }
+        }
       }
   });
 }
-
-//24 - 16 - 11
-
-//1250 + 1000
