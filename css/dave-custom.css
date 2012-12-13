@@ -1,74 +1,96 @@
-#adv-upcoming {
-    background-color: white;
-    color: black;
-    font-weight: normal;
+@media all {    
+    
+    #adv-upcoming {
+        background-color: white;
+        color: black;
+        font-weight: normal;
+    }
+
+    #main-content {
+        color: black;
+    }
+
+    .table-row {
+        /*display: table-row;*/
+        padding: 0;
+        width: 100%;
+    }
+
+    .acc-row > div,
+    .acc-inner-row > div {
+        display: inline-block;
+        vertical-align: top;
+        width: 49%;
+    }
+
+    .acc-inner-row > div {
+        padding: 8px 0;
+    }
+
+    .dis-table {
+        display: table;
+        padding: 8px 15px;
+        width: 100%;
+    }
+
+    a.acc-row:hover {
+        text-decoration: none !important;
+    }
+
+    #adv-upcoming tbody tr:hover {
+        background-color: #C8E5FF;
+        cursor: pointer;
+    }
+
+    #adv-upcoming tbody tr:active {
+        background-color: #7CC1FF;
+    }
+
+    .apt-selected {
+        background-color: #7CC1FF !important;
+    }
+
+    #form-sesh > * {
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    #netid {
+        /*width: 50%;*/
+    }
+
+    #manage-recs .btn {
+        width: 115px;
+    }
 }
 
-#main-content {
-    color: black;
+@media (min-width: 768px) {
+    
+    #menu-depts {
+        margin-top: -295px;
+    }
+
+    #menu-car {
+        margin-top: -260px;
+    }
+
+    #menu-acad {
+        margin-top: -330px;
+    }
 }
 
-.table-row {
-    /*display: table-row;*/
-    padding: 0;
-    width: 100%;
+@media (max-width: 767px) {
+    
+    #menu-depts {
+        margin-top: -375px;
+    }
+
+    #menu-car {
+        margin-top: -280px;
+    }
+
+    #menu-acad {
+        margin-top: -390px;
+    }
 }
 
-.acc-row > div,
-.acc-inner-row > div {
-    display: inline-block;
-    vertical-align: top;
-    width: 49%;
-}
-
-.acc-inner-row > div {
-    padding: 8px 0;
-}
-
-.dis-table {
-    display: table;
-    padding: 8px 15px;
-    width: 100%;
-}
-
-a.acc-row:hover {
-    text-decoration: none !important;
-}
-
-#adv-upcoming tbody tr:hover {
-    background-color: #C8E5FF;
-    cursor: pointer;
-}
-
-#adv-upcoming tbody tr:active {
-    background-color: #7CC1FF;
-}
-
-.apt-selected {
-    background-color: #7CC1FF !important;
-}
-
-#form-sesh > * {
-    display: inline-block;
-    vertical-align: top;
-}
-
-#netid {
-    /*width: 50%;*/
-}
-
-#menu-depts {
-    margin-top: -295px;
-}
-
-#menu-car {
-    margin-top: -260px;
-}
-
-#menu-acad {
-    margin-top: -330px;
-}
-
-#manage-recs .btn {
-    width: 115px;
-}
