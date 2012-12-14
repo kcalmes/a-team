@@ -47,7 +47,6 @@ $(function(){
     
     $('body').on('click', '.input-append button', function() {
         var query = $(this).siblings('input').val()
-//        alert(query);
         loadDocSearch(query);
     });
     
@@ -96,27 +95,39 @@ function loadDocSearch(searchQuery) {
   var url = "http://www.williamsware.com/cs/new/searchService2.php?query=" + searchQuery;
   var yqlUrl = "http://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20json%20where%20url%3D%22" + encodeURIComponent(url) + "%22&format=json&callback=";
   
+  window.location.assign('#advisors/resources/view');
+  
   $.ajax({
     url: yqlUrl,
     datatype: 'json',
     success: function(data) {
-        var query = {query: searchQuery};
         
-        new EJS({url: './pages/advisors/resources/view.ejs'}).update('main-content', query);
+        var json = {};
+        json.query = searchQuery;
+        json.results = {};
+        
+        var page = '';
+        var id = 'content';
         
         if (data.query.results.json == null) {
-            new EJS({url: './pages/advisors/no_results.ejs'}).update('content', query);
+            page = './pages/advisors/no_results.ejs';
+            
         } else {
             var length = data.query.results.json.results.length;
-//            alert(length);
             if (length == 0) {
-                new EJS({url: './pages/advisors/no_results.ejs'}).update('content', query);
+                page = './pages/advisors/no_results.ejs';
             } else if (length > 0) {
-                new EJS({url: './pages/advisors/aResource.ejs'}).update('content', data.query.results.json);
+                page = './pages/advisors/aResource.ejs';
+                json.results = data.query.results.json.results;
             } else {
-                new EJS({url: './pages/advisors/oneResource.ejs'}).update('content', data.query.results.json);
+                page = './pages/advisors/oneResource.ejs';
+                json.results = data.query.results.json.results;
             }
+            
+            
         }
+        
+        new EJS({url: page}).update(id, json);
       }
   });
 }

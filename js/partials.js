@@ -8,7 +8,15 @@ $(function(){
 });
 
 function navigate(){
+
+    
   var page = document.location.hash.substr(1);
+  
+  if (window.location.href.indexOf('?') < 0 && page != '') {
+        var href = window.location.href.replace('#', '?#');
+        window.location.assign(href);
+    }
+    
   var scope = page.substr(0,page.lastIndexOf('/'));
   console.log(scope);
   //set the buttons
